@@ -1,23 +1,112 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website</title>
-  <link rel="stylesheet" href="CSS/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - My Website</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <header class="navigasi">
-    <div class="logo"><img class="logos" src="Asset/chitanda eru pp cute.jpg" alt="F"></div>
-    <nav class="nav-menu">
-        <ul class="nav-list">
-            <li><a href="" class="link">Home</a></li>
-            <li><a href="" class="link">Our Profile</a></li>
-            <li><a href="" class="link">Portofolio</a></li>
-            <li><a href="" class="link">Message Us</a></li>
-        </ul>
-    </nav>        
-
+    <div class="logo">
+      <img src="asset/fotogwe2.jpg" alt="Logo" />
+    </div>
+    <nav class="list">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="#about-me">About Me</a>
+      <a class="link" href="#">Portofolio</a>
+      <a class="link" href="#message">Message Us</a>
+    </nav>
   </header>
+
+  <main>
+    <section class="welcome">
+      <div class="bg-container">
+        <img src="asset/B1.jpg" alt="Banner" class="banner" id="banner-image">
+        <div class="overlay">
+          <h2 id="welcomeMessage">Hi, Welcome To Website</h2>
+          <p>Ini adalah website portofolio pertama saya</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="about-me">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="asset/fotogwe2.jpg" alt="Foto Profil">
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>Hey guys, my name is <strong>FIA</strong>. I'm a high schooler really into web dev lately. Currently diving into HTML, CSS, and JavaScript to get the hang of building cool, responsive websites.</p>
+
+          
+          <h3> Vision</h3>
+          <p>
+            Becoming an innovative person who's actively involved in the digital world by creating things that make a real positive impact on society.
+          </p>
+
+          <H3>Mission</H3>
+          <ul>
+          <li>Consistently growing my tech skills and creativity.</li>
+          <li>Joining collab and community-based projects.</li>
+          <li>Keep learning and staying updated with the latest tech trends.</li>
+          <li>Becoming the most handsome guy alive.</li>
+          </ul>
+          
+          <h3>Skill and Hobby</h3>
+          <ul>
+            <li>HTML & CSS (dasar)</li>
+            <li>Photography</li>
+            <li>Game</li>
+            <li>Robotic Arduino</li>
+          </ul>
+
+          <h3>Contact</h3>
+          <p>Email: ishom2007@email.com<br>
+            Instagram: @fia.visual</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="message" id="message">
+      <h3>Message Us</h3>
+      <div class="ngisi-form">
+        <form id="contactForm">
+          <label>Name <span style="color: red;">*</span></label>
+          <input type="text" id="nama" placeholder="Di isi semua ya, kata atmin RevoU gabole kosong" required />
+
+          <label>Date of Birth <span style="color: red;">*</span></label>
+          <input type="date" id="tglLahir" required />
+
+          <label>Gender <span style="color: red;">*</span></label>
+          <label><input type="radio" name="gender" value="Laki-laki" required /> Male</label>
+          <label><input type="radio" name="gender" value="Perempuan" required /> Female</label>
+
+          <label>Message <span style="color: red;">*</span></label>
+          <textarea id="pesan" placeholder="Sampaikan isi hati mu disini!" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+
+        <div class="result" id="formResult"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 FIA Website. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/fia.visual?igsh=Z3BtcDhybmdwcTNt" title="Instagram">Instagram</a>
+        <a href="https://github.com/Fiasync" title="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
