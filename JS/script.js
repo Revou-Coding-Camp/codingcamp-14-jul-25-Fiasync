@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const images = [
-    "asset/B1.jpg",
-    "asset/B2.jpg",
-    "asset/B3.jpg"
+    "Asset/B1.jpg",
+    "Asset/B2.jpg",
+    "Asset/B3.jpg"
   ];
 
   let current = 0;
